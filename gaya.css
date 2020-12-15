@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+* {
+    -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
+
+/* Page Content */
+body {
+        font-family: Arial;
+  margin: 0;
+		 background-image:url("Backgroundmobile.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+    background-attachment: fixed;
+    }
+
+.header {
+text-align:center;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  padding-right: 10px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+.gambar {
+    width: 85%;
+    height: auto;
+}
+
+
+
+
+
+/*Tombol*/
+.button {
+  position: relative;
+  height: 30px;
+  width: auto;
+  background-color: #a82faa;
+  background-repeat: repeat;
+  padding-left: 5;
+  padding-right: 5;
+  font-family: 'Kumbh Sans', sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px #4C4C4C;
+  border-bottom: 4px solid#6d1f77;
+  border-right: 2px solid #ce97d4;
+  border-left: 2px solid#6d1f77;
+  border-top: 2px solid #d097d4;
+  box-sizing: border-box;
+  font-size: 15px;
+  margin: 3px;
+}
+#button {
+    font-size: 15px;
+}
+#fixedbutton {
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+}
+#fixedbutton2 {
+    position: fixed;
+    bottom: 0px;
+    left: 0px; 
+}
+.button span {
+  position: relative;
+  line-height: 40px;
+  bottom: 3px;
+}
+
+.button:hover {
+  border-bottom: 4px solid #9000c9;
+  border-right: 2px solid  #cf88ff;
+  border-left: 2px solid#7e13bd;
+  border-top: 2px solid #cf88ff;
+  background-color: rgb(195, 39, 226);
+}
+.lorem {
+    size: 14px;
+    font-family: sans-serif;
+    text-align: left;
+    padding: 2px;
+    visibility: hidden;
+}
+.lipsum {
+    visibility: hidden;
+}
+.loremD {
+    size: 14px;
+    font-family: sans-serif;
+    text-align: left;
+    padding: 2px;
+}
+
+
+
+#credits {
+  bottom: -10px;
+  position: relative;
+  font-size: 20px;
+  font-style: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  animation: kredit 4s infinite;
+  text-shadow: 0 0 4px black;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+.maintenance {
+  color: #DEDEDE;
+}
+@keyframes kredit {
+  0% {
+    color: red;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: red;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+.lipsum,.lorem {
+    display: none;
+  }
+}
+
+/*desktop*/
+
+@media (min-width: 768px) {
+    body {
+  margin: 0;
+		 background-image:url("backgrounddesktop.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+    }
+.header {
+  padding: 10px;
+  color: white;
+  font-size: 30px;
+  left: 10%;
+    }
+    .gambar {
+    display: none;
+    visibility: hidden;
+}
+.button {
+  position: relative;
+  height: 50px;
+  width: auto;
+  font-size: 30px;
+  padding: 9px;
+  margin: 30px;
+}
+#fixedbutton {
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+}
+#fixedbutton2 {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+.lorem {
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    font-style: italic;
+    visibility: visible;
+  }
+.lipsum {
+    font-size: 50px;
+    font-family: times-new-roman;
+    text-align: center;
+    font-style: italic;
+    visibility: visible;
+  }
+  .loremD {
+    display: none;
+    visibility: hidden;
+}
+}
